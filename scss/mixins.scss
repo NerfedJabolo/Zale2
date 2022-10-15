@@ -1,0 +1,42 @@
+//Fonts
+
+@mixin large-font-header {
+    font-size: $large-font-size-header;
+}
+
+@mixin med-font-header {
+    font-size: $med-font-size-header;
+}
+
+//Text effects
+
+@mixin header-linear {
+    display: inline-block;
+    background: linear-gradient(to right, $header-color-text-primary, $header-color-text-secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition-duration: .5s;
+}
+
+
+
+@mixin header-main-hover {
+    color: white;
+    cursor: pointer;
+        transition-duration: .5s;
+        text-shadow: 0 0 .35rem #03bcf4,
+            0 0 2rem #03bcf4,
+            0 0 4rem #03bcf4,
+            0 0 8rem #03bcf4,
+            0 0 16rem #03bcf4;
+}
+
+@mixin header-secondary-hover {
+    color: white;
+    cursor: pointer;
+    transition-duration: .5s;
+    text-shadow: 0 0 .2rem #3AE63D,
+        0 0 2rem #3AE63D;
+}
+
+

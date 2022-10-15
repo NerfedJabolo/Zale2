@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.large-font {
+    @include large-font-header
+}
+
+.med-font {
+    @include med-font-header
+}
+
+
+html {
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 50rem;
+    background-color: $color-primary-1;
+
+    &--content {
+        width: 80vw;
+        height: 40rem;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        &--main {
+            &-text {
+                @include header-linear;
+                &:hover {
+                    background-image: none;
+                    @include header-main-hover;
+                }
+            }
+        }
+        &--secondary {
+            &-text {
+                display: inline-block;
+                max-width: 15rem;
+                margin-top: 2rem;
+                &-word {
+                    @include header-linear;
+                    &:hover {
+                        background-image: none;
+                        @include header-secondary-hover;
+                    }
+                    
+
+                }
+            }
+        }
+            .example {
+                height: 25rem;
+                width: auto;
+                float: right;
+        }
+    }
+}
+
+
+

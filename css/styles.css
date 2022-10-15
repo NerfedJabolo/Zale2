@@ -1,2 +1,61 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+.large-font {
+  font-size: 7rem; }
+
+.med-font {
+  font-size: 3rem; }
+
 html {
-  background-color: grey; }
+  font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif; }
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 50rem;
+  background-color: #152238; }
+  .container--content {
+    width: 80vw;
+    height: 40rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+    .container--content--main-text {
+      display: inline-block;
+      background: linear-gradient(to right, #AD1F9A, #FF5F1F);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition-duration: .5s; }
+      .container--content--main-text:hover {
+        background-image: none;
+        color: white;
+        cursor: pointer;
+        transition-duration: .5s;
+        text-shadow: 0 0 .35rem #03bcf4, 0 0 2rem #03bcf4, 0 0 4rem #03bcf4, 0 0 8rem #03bcf4, 0 0 16rem #03bcf4; }
+    .container--content--secondary-text {
+      display: inline-block;
+      max-width: 15rem;
+      margin-top: 2rem; }
+      .container--content--secondary-text-word {
+        display: inline-block;
+        background: linear-gradient(to right, #AD1F9A, #FF5F1F);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition-duration: .5s; }
+        .container--content--secondary-text-word:hover {
+          background-image: none;
+          color: white;
+          cursor: pointer;
+          transition-duration: .5s;
+          text-shadow: 0 0 .2rem #3AE63D, 0 0 2rem #3AE63D; }
+    .container--content .example {
+      height: 25rem;
+      width: auto;
+      float: right; }
