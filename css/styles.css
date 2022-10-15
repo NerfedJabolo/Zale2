@@ -59,3 +59,138 @@ html {
       height: 25rem;
       width: auto;
       float: right; }
+
+.why-us {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 80rem;
+  background-image: url(../imgs/background-main.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: flex-start; }
+  .why-us--upper {
+    display: flex;
+    width: 100vw;
+    height: fit-content;
+    justify-content: center; }
+    .why-us--upper--text {
+      margin-top: 5rem;
+      color: white;
+      background: rgba(54, 69, 79, 0.6);
+      box-shadow: 0 8px 32px 0 rgba(27, 27, 34, 0.37);
+      backdrop-filter: blur(2px);
+      -webkit-backdrop-filter: blur(2px);
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      width: fit-content;
+      padding-top: 1rem;
+      padding-left: 2rem;
+      padding-right: 2rem; }
+  .why-us--lower {
+    display: flex;
+    min-height: 50rem;
+    width: 100vw;
+    color: red;
+    justify-content: center; }
+    .why-us--lower-centered {
+      display: flex;
+      margin-top: 5rem;
+      background: rgba(255, 255, 255, 0.15);
+      box-shadow: 0 8px 32px 0 rgba(27, 27, 34, 0.37);
+      backdrop-filter: blur(1.5px);
+      -webkit-backdrop-filter: blur(1.5px);
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      width: 90vw;
+      height: fit-content;
+      justify-content: space-around; }
+      .why-us--lower-centered .reason-box {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        width: 30rem;
+        height: 50rem;
+        box-shadow: 0 8px 32px 0 rgba(27, 27, 34, 0.37);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border-radius: 20px; }
+        .why-us--lower-centered .reason-box-1 {
+          background: rgba(3, 188, 244, 0.45);
+          display: flex;
+          flex-direction: column; }
+          .why-us--lower-centered .reason-box-1 .reason-1 {
+            background: #152238;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            color: whitesmoke;
+            font-weight: 800;
+            width: 100%;
+            height: 7rem;
+            border-radius: 20px 20px 0px 0px; }
+          .why-us--lower-centered .reason-box-1 .reason-text {
+            display: flex;
+            align-items: center;
+            font-size: 2rem;
+            color: black;
+            text-align: center;
+            padding: 1.5rem;
+            font-weight: 600;
+            width: 100%;
+            height: 100%;
+            border-radius: 0 0 20px 20px; }
+        .why-us--lower-centered .reason-box-2 {
+          background: rgba(58, 230, 61, 0.45);
+          display: flex;
+          flex-direction: column; }
+          .why-us--lower-centered .reason-box-2 .reason-2 {
+            background: #152238;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            color: whitesmoke;
+            font-weight: 800;
+            width: 100%;
+            height: 7rem;
+            border-radius: 20px 20px 0px 0px; }
+          .why-us--lower-centered .reason-box-2 .reason-text {
+            display: flex;
+            align-items: center;
+            font-size: 2rem;
+            color: black;
+            text-align: center;
+            padding: 1.5rem;
+            font-weight: 600;
+            width: 100%;
+            height: 100%;
+            border-radius: 0 0 20px 20px; }
+        .why-us--lower-centered .reason-box-3 {
+          background: rgba(251, 80, 110, 0.45);
+          display: flex;
+          flex-direction: column; }
+          .why-us--lower-centered .reason-box-3 .reason-3 {
+            background: #152238;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            color: whitesmoke;
+            font-weight: 800;
+            width: 100%;
+            height: 7rem;
+            border-radius: 20px 20px 0px 0px; }
+          .why-us--lower-centered .reason-box-3 .reason-text {
+            display: flex;
+            align-items: center;
+            font-size: 2rem;
+            color: black;
+            text-align: center;
+            padding: 1.5rem;
+            font-weight: 600;
+            width: 100%;
+            height: 100%;
+            border-radius: 0 0 20px 20px; }
+
+@media only screen and (max-width: 1000px) {
+  .example {
+    display: none; } }
