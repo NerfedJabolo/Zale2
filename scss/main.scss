@@ -69,7 +69,7 @@ html {
   flex-direction: column;
   width: 100vw;
   height: 80rem;
-  background-image: url(../imgs/background-main.webp);
+  background-image: url(../imgs/background-main-small.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -100,7 +100,6 @@ html {
     display: flex;
     min-height: 50rem;
     width: 100vw;
-    color: red;
     justify-content: center;
     &-centered {
       display: flex;
@@ -219,7 +218,14 @@ html {
 }
 
 @media only screen and (max-width: 1000px) {
+  html {
+    font-size: 50%;
+  }
   .example {
     display: none;
+  }
+
+  .why-us--lower-centered {
+    width: 100vw;
   }
 }
